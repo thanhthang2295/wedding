@@ -1,0 +1,83 @@
+.main-daily {
+  .section-block {
+    &__grid {
+      translate: none;
+      rotate: none;
+      scale: none;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      box-sizing: border-box;
+      width: 100%;
+      overflow: visible;
+      &-item {
+        border-radius: $border-radius-base;
+        position: relative;
+        box-sizing: border-box;
+        padding: $spacing-small $spacing;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: get-color(chart, 0);
+        border: 1px solid get-color(chart, 0);
+        background: linear-gradient(
+          340deg,
+          rgba(get-color(chart, 0), 0.3),
+          rgba(get-color(chart, 0), 0.1) 30%,
+          rgba(get-color(chart, 0), 0.06)
+        );
+        // &::before {
+        //   border-radius: $border-radius-base;
+        //   background: rgba(get-color(chart, 2), 0.2);
+        //   transform: translate(10px, 10px);
+        //   content: "";
+        //   position: absolute;
+        //   top: 0;
+        //   right: 0;
+        //   left: 0;
+        //   bottom: 0;
+        //   z-index: -1;
+        //   mix-blend-mode: multiply;
+        //   opacity: 0.75;
+        //   filter: blur(10px);
+        // }
+        &-number {
+          color: color(black);
+          margin-bottom: 0;
+          margin-top: $spacing-small;
+        }
+        &:nth-child(2) {
+          color: get-color(chart, 2);
+          border-color: get-color(chart, 2);
+          background: linear-gradient(
+            340deg,
+            rgba(get-color(chart, 2), 0.3),
+            rgba(get-color(chart, 2), 0.1) 30%,
+            rgba(get-color(chart, 2), 0.06)
+          );
+        }
+        &:nth-child(3) {
+          color: get-color(chart, 3);
+          border-color: get-color(chart, 3);
+          background: linear-gradient(
+            340deg,
+            rgba(get-color(chart, 3), 0.3),
+            rgba(get-color(chart, 3), 0.1) 30%,
+            rgba(get-color(chart, 3), 0.06)
+          );
+        }
+        &:nth-child(4) {
+          color: get-color(chart, 1);
+          border-color: get-color(chart, 1);
+          background: linear-gradient(
+            340deg,
+            rgba(get-color(chart, 1), 0.3),
+            rgba(get-color(chart, 1), 0.1) 30%,
+            rgba(get-color(chart, 1), 0.06)
+          );
+        }
+      }
+    }
+    &__main {
+      margin-bottom: $spacing-small;
+    }
+  }
+}

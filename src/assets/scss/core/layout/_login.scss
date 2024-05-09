@@ -1,0 +1,189 @@
+﻿// .main {
+//   &-login {
+//     background-color: get-color(light, 0);
+//     background-image: url("../../../images/background.png");
+//     background-repeat: no-repeat;
+//     background-position: bottom right;
+//     background-size: 50%;
+//     width: 100vw;
+//     height: 100vh;
+//     overflow: hidden;
+//     position: relative;
+
+//     &-inner {
+//       width: 100%;
+//       padding: $spacing-large;
+//       display: flex;
+//       height: 100%;
+//     }
+//     &-wrapper {
+//       width: 40%;
+//       max-width: 480px;
+//       margin: auto;
+//       margin-right: 0;
+//       // padding-left: 5%;
+//       // padding-right: 2%;
+//       @include media("<=large") {
+//         width: 50%;
+//       }
+//     }
+//     &-other {
+//       width: 60%;
+//       // padding: $spacing-large;
+
+//       padding-left: 5%;
+//       // padding-right: 0;
+
+//       &__inner {
+//         width: 100%;
+//         display: flex;
+//         flex-direction: column;
+//         &-row {
+//           display: flex;
+//           flex-wrap: wrap;
+//           align-items: flex-start;
+//           width: 100%;
+//           &:not(:last-child) {
+//             margin-bottom: $spacing;
+//           }
+//           > div {
+//             width: calc(100% / 2);
+//           }
+//         }
+//       }
+
+//       @include media("<=large") {
+//         // width: 50%;
+//         padding-left: 2%;
+//         // &__inner {
+//         //   > div {
+//         //     width: calc(100% / 2);
+//         //   }
+//         // }
+//       }
+//     }
+//     .logo {
+//       text-align: center;
+//       margin-bottom: 12px;
+//       > img {
+//         margin: 0 auto;
+//       }
+//     }
+//     h5 {
+//       // margin-top: 12px;
+//     }
+//     .form {
+//       &-login {
+//         max-width: 680px;
+//         min-height: 330px;
+//         width: 100%;
+//         margin: 0 auto;
+//         padding: calc($form--padding-h * 3) $form--padding-v;
+//         background-color: color-bg(input);
+//         border-radius: $border-radius-base;
+//         box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+//           rgba(17, 17, 26, 0.1) 0px 16px 56px,
+//           rgba(17, 17, 26, 0.1) 0px 24px 80px;
+//         margin-bottom: calc($spacing * 2);
+//         text-align: center;
+//         @include media("<=large") {
+//           padding: $spacing calc($spacing-small);
+//         }
+//       }
+//       &-group {
+//         &.ta-center {
+//           justify-content: center;
+//         }
+//         .btn {
+//           margin: 0 calc($button-w-form--padding-h / 2);
+//           min-width: 130px;
+//         }
+//         @include media("<=large") {
+//           &-row {
+//             .col-3 {
+//               flex: 0 0 30%;
+//               max-width: 30%;
+//               padding-right: $spacing-small;
+//               padding-left: $spacing-small;
+//             }
+//             .col-9 {
+//               flex: 0 0 70%;
+//               max-width: 70%;
+//             }
+//           }
+//         }
+//       }
+//     }
+//     .keyboard {
+//       box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+//         rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+//       .hg-theme-default .hg-functionBtn {
+//         width: 10%;
+//       }
+//       .hg-theme-default .hg-button.hg-button-enter {
+//         max-width: 100%;
+//         width: 29%;
+//         height: 96px;
+//       }
+//       .hg-theme-default .hg-row .hg-button-container [data-skbtn="0"] {
+//         margin-top: 5px;
+//         margin-right: 5px;
+//       }
+//     }
+//     .version {
+//       position: relative;
+//       user-select: none;
+//       max-width: 30px;
+//       margin-left: auto;
+//       .version-text {
+//         position: absolute;
+//         font-size: 10px;
+//         right: -8px;
+//         top: -4px;
+//         background-color: get-color(light, 0);
+//         color: color(base);
+//         line-height: 1;
+//         padding: 2px;
+//         border-radius: 2px;
+//       }
+//     }
+//     .login {
+//       &-cards {
+//         @include reset-list();
+//         width: 100%;
+//         display: flex;
+//         flex-wrap: wrap;
+//       }
+//       &-card {
+//         width: calc(100% / 4);
+//         padding: calc($spacing-small);
+//         margin: 0;
+//         @include media("<=large") {
+//           width: calc(100% / 3);
+//         }
+//         &__inner {
+//           border-radius: 24px;
+//           background: #e0e0e0;
+//           box-shadow: 5px 5px 20px #9d9d9d, -5px -5px 20px #ffffff;
+//           display: flex;
+//           align-items: center;
+//           justify-content: center;
+//           flex-direction: column;
+//           padding: $spacing-small;
+//           min-height: 100px;
+//           @include user-select(none);
+//           cursor: pointer;
+//         }
+//         .icon {
+//           color: get-color(primary, 2);
+//         }
+//         &__title {
+//           margin: 0;
+//           padding: calc($spacing-small / 2) $spacing-small $spacing-small;
+//           @include user-select(none);
+//           // @include font-size(h5);
+//         }
+//       }
+//     }
+//   }
+// }

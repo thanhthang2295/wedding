@@ -1,0 +1,115 @@
+﻿.main-home {
+  // background-color: get-color(secondary, 4);
+  @include x-linear-gradient(
+    "to bottom",
+    color(white),
+    color(white),
+    get-color(secondary, 4)
+  );
+  min-height: 100vh;
+
+  .header {
+    position: relative;
+    padding: calc($spacing * 2) $spacing $spacing;
+    display: flex;
+    // aspect-ratio: 2/1;
+    @include x-linear-gradient(
+      "to bottom",
+      color(white),
+      color(white),
+      get-color(secondary, 2)
+    );
+    &-fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: $spacing-small $spacing;
+      display: flex;
+      z-index: $zIndexL;
+      transform: translateY(-100%);
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+      @include x-linear-gradient(
+        "to bottom",
+        color(white),
+        color(white),
+        get-color(secondary, 2)
+      );
+      &.is-sticky {
+        transform: translateY(0%);
+        animation: fadeIn 0.5s;
+        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+      }
+      .header-info {
+        // justify-content: center;
+        > * {
+          margin: 0;
+        }
+        h3 {
+          @include text-truncate();
+          padding-right: calc($spacing-small);
+        }
+      }
+      .header-weather {
+        // width: 10%;
+        margin-left: auto;
+        display: flex;
+      }
+      .weather {
+        margin-left: auto;
+        &-inner {
+          display: flex;
+          flex-direction: column;
+          img {
+            width: 40px;
+          }
+          h5 {
+            margin-left: 4px;
+            font-size: 1em;
+            line-height: 1;
+          }
+        }
+      }
+    }
+    &-info {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      .icon {
+        margin-right: $spacing-small;
+        min-width: 24px;
+      }
+      &__name {
+        display: flex;
+        align-items: center;
+        color: color(white);
+        margin-bottom: calc($spacing-small / 2);
+        > img {
+          width: 44px;
+          // max-width: 37px;
+          margin-right: $spacing-small;
+        }
+        h3 {
+          margin: 0;
+        }
+      }
+      &__address {
+        display: flex;
+        align-items: center;
+        color: color(white);
+        // margin-top: auto;
+
+        h4 {
+          @include font-size(sm);
+          margin: 0;
+          line-height: 1.2;
+        }
+      }
+    }
+    &-weather {
+      width: 20%;
+      margin-left: auto;
+    }
+  }
+}
