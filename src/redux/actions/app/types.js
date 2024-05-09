@@ -1,9 +1,0 @@
-﻿export const APP_TYPES = {
-  "LOADING" : "LOADING",
-  "TOKEN": "TOKEN",
-  "PROFILE": "PROFILE",
-  "LOG_OUT": "LOG_OUT",
-  "STORE": "STORE",
-  "INSETS": "INSETS",
-  "AUTHENTICATION": "AUTHENTICATION",
-}
