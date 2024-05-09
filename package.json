@@ -2,6 +2,7 @@
   "name": "wedding",
   "version": "1.0.1",
   "private": true,
+  "homepage": "https://thanhthang2295.github.io/wedding",
   "dependencies": {
     "@hookform/resolvers": "^2.9.11",
     "@testing-library/jest-dom": "^5.17.0",
@@ -12,6 +13,7 @@
     "crypto": "^1.0.1",
     "crypto-js": "^4.1.1",
     "dayjs": "^1.11.9",
+    "gh-pages": "^6.1.1",
     "lodash": "^4.17.21",
     "rc-calendar": "^9.15.11",
     "react": "^18.2.0",
@@ -35,7 +37,9 @@
     "build": "rm -rf build && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "clear": "rm -rf node_modules && yarn cache clean --force"
+    "clear": "rm -rf node_modules && yarn cache clean --force",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
